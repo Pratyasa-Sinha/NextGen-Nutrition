@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Project</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <h2>Questionnaire</h2>
+        
+        <input type="checkbox" name="food" id="veg1" value="Lettuce" onclick="return;">
+        <label for="veg1">Lettuce</label>
+        <input form="myForm" type="checkbox" name="food" id="veg2"  value="Tomato" onclick="return;"> 
+        <label for="veg2">Tomato</label>
+        <input form="myForm" type="checkbox" name="food" id="veg3"  value="Broccoli" onclick="return;"> 
+        <label for="veg3">Broccoli</label>
+        <input type="checkbox" name="food" id="veg4" value="Peas" onclick="return;"> 
+        <label for="veg4">Peas</label>
+        <input type="checkbox" name="food" id="veg5" value="Corn" onclick="return;"> 
+        <label for="veg5">Corn</label>
+        <input type="checkbox" name="food" id="veg6" value="Carrot" onclick="return;"> 
+        <label for="veg6">Carrot</label>
+        <input type="checkbox" name="food" id="veg7" value="Potato" onclick="return;"> 
+        <label for="veg7">Potato</label>
+        <input type="checkbox" name="food" id="dairy1" value="Milk" onclick="return;"> 
+        <label for="dairy1">Milk</label>
+        <input type="checkbox" name="food" id="dairy2" value="Cheese" onclick="return;"> 
+        <label for="dairy2">Cheese</label>
+        <input type="checkbox" name="food" id="dairy3" value="Yogurt" onclick="return;"> 
+        <label for="dairy3">Yogurt</label>
+        <input type="checkbox" name="food" id="fruit1" value="Apple" onclick="return;"> 
+        <label for="fruit1">Apple</label>
+        <input type="checkbox" name="food" id="fruit2" value="Banana" onclick="return;"> 
+        <label for="fruit2">Banana</label>
+        <input type="checkbox" name="food" id="fruit3" value="Grapes" onclick="return;"> 
+        <label for="fruit3">Grapes</label>
+        <input type="checkbox" name="food" id="grain1" value="Bread" onclick="return;"> 
+        <label for="grain1">Bread</label>
+        <input type="checkbox" name="food" id="grain2" value="Pasta" onclick="return;"> 
+        <label for="grain2">Pasta</label>
+        <input type="checkbox" name="food" id="grain3" value="Rice" onclick="return;"> 
+        <label for="grain3">Rice</label>
+        <input type="checkbox" name="food" id="grain4" value="Oats" onclick="return;"> 
+        <label for="grain4">Oats</label>
+        <input type="checkbox" name="food" id="pro1" value="Chicken" onclick="return;"> 
+        <label for="pro1">Chicken</label>
+        <input type="checkbox" name="food" id="pro2" value="Fish" onclick="return;"> 
+        <label for="pro2">Fish</label>
+        <input type="checkbox" name="food" id="pro3" value="Egg" onclick="return;"> 
+        <label for="pro3">Egg</label>
+        
+
+       <script type="text/javascript">  
+            function ValidateSelection()  
+            {  
+                var check_box = document.getElementsByName("food");  
+                var CheckedItems = 0; 
+                var track = 0;
+                var track1 = 0;
+                for(var i = 0; i < check_box.length; i++)  
+                {  
+                   // if(check_box[i].checked)  
+                     //   CheckedItems++; 
+                     if( i == 1 && check_box[i].checked){ //check for tomato
+                        track++;
+                     }
+                    if(i == 2 && check_box[i].checked){ //broccli
+                        track++;
+                    }
+                    if(i == 8 && check_box[i].checked){ //cheese
+                        track++;
+                    }
+                    if( i == 14 && check_box[i].checked){ //pasta
+                        track++;
+                    }
+                    if( i == 16 && check_box[i].checked){ //chicken
+                        track++;
+                    }
+                    //second recipe includes yogurt, oats, and apples
+                    if( i == 9 && check_box[i].checked){
+                     
+                    if( i == 16 && check_box[i].checked){
+                        track1++;
+                    }
+                    if( i == 10 && check_box[i].checked){
+                        track1++;
+                    }
+                    
+
+                      
+                   } 
+               }
+       }
+             
+                     
+                  
+                 
+         </script>
+        <form action = "final_page1.html">
+            <button>
+                Please Click Here to Get the Result
+            </button>
+        </form>
+            
+</html>
